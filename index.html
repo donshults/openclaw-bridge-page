@@ -3,101 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I Am Don Shults - AI Assistant Course</title>
+    <title>I Am Don Shults - Free OpenClaw AI Assistant Course</title>
+    <meta name="description" content="Free course: Get your first AI assistant working in 48 hours. Learn to use OpenClaw to handle email, manage your calendar, and reclaim 3-5 hours per week.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
-            min-height: 100vh;
+            line-height: 1.7;
+            color: #2d3748;
+            background: #f7fafc;
         }
+        
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%);
+            color: white;
+            overflow: hidden;
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 0.85;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to right, rgba(26, 54, 93, 0.95), rgba(26, 54, 93, 0.7));
+            display: flex;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            font-weight: 700;
+        }
+        
+        .hero .lead {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            opacity: 0.95;
+        }
+        
         .container {
             max-width: 800px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
-        .card {
+        
+        .section {
+            margin-bottom: 48px;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: #1a365d;
+            margin-bottom: 24px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            color: #2d3748;
+            margin: 32px 0 16px;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            font-size: 1.1rem;
+        }
+        
+        .cta-section {
             background: white;
             border-radius: 12px;
             padding: 48px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 60px 0;
         }
-        h1 {
-            font-size: 2.5rem;
-            color: #1a365d;
-            margin-bottom: 24px;
-            line-height: 1.2;
-        }
-        .lead {
-            font-size: 1.25rem;
-            color: #4a5568;
-            margin-bottom: 32px;
-        }
+        
         .cta-button {
             display: inline-block;
             background: #c53030;
             color: white;
-            padding: 16px 32px;
+            padding: 18px 48px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: background 0.2s;
+            margin-top: 24px;
         }
+        
         .cta-button:hover {
             background: #9b2c2c;
         }
+        
         .features {
-            margin-top: 40px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 24px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+            margin: 48px 0;
         }
+        
         .feature {
-            padding: 20px;
-            background: #f7fafc;
+            background: white;
+            padding: 32px;
             border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
         }
+        
         .feature h3 {
             color: #2d3748;
-            margin-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.25rem;
         }
+        
         .feature p {
             color: #718096;
-            font-size: 0.95rem;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .ps {
+            background: #fff5f5;
+            border-left: 4px solid #c53030;
+            padding: 24px;
+            margin: 48px 0;
+            font-style: italic;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.75rem; }
+            .hero .lead { font-size: 1.1rem; }
+            h2 { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
+    <div class="hero">
+        <img src="hero-future-don-final.png" alt="Don Shults - AI Assistant Course" class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1>I Spent Two Months' Salary on a Computer in 1977. Here's What I'm Seeing Again.</h1>
+                <p class="lead">
+                    Free course: Get your first AI assistant working in 48 hours. 
+                    Handle your email, manage your calendar, and reclaim 3-5 hours per week.
+                </p>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
-        <div class="card">
-            <h1>I Spent Two Months' Salary on a Computer in 1977. Here's What I'm Seeing Again.</h1>
-            <p class="lead">
-                In 1977, I spent nearly two months of my Army salary on a Tandy TRS-80 because I saw what was coming. 
+        <div class="section">
+            <h2>Every Week You Wait, Someone Else Gets Ahead</h2>
+            <p>
+                In 1977, I spent nearly two months of my Army salary—$900—on a Tandy TRS-80 because I saw what was coming. 
                 I'm seeing the same pattern again now—with AI assistants.
             </p>
-            <p class="lead">
-                Free course: Get your first AI assistant working in 48 hours. 
-                Handle your email, manage your calendar, and reclaim 3-5 hours per week.
+            <p>
+                Every week you delay, someone else is learning to use AI assistants to handle their email, manage their calendar, 
+                research opportunities, and free up hours for the work that actually matters.
             </p>
-            <a href="#" class="cta-button">Get the Free Course</a>
-            
-            <div class="features">
-                <div class="feature">
-                    <h3>🎯 Free Hosted Instance</h3>
-                    <p>We set up OpenClaw for you. No server management required.</p>
-                </div>
-                <div class="feature">
-                    <h3>📚 8-Module Course</h3>
-                    <p>Step-by-step training from installation to advanced workflows.</p>
-                </div>
-                <div class="feature">
-                    <h3>💬 Community Access</h3>
-                    <p>Join others building AI assistants. Get help when you need it.</p>
-                </div>
+            <p>
+                They're not smarter than you. They're not working harder. They just started sooner.
+            </p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Get the Free Course</h2>
+            <p style="font-size: 1.1rem; color: #4a5568; margin-bottom: 8px;">
+                8 modules · 30 lessons · ~7 hours of content
+            </p>
+            <p style="color: #718096;">
+                Learn to install and train your own AI assistant using OpenClaw
+            </p>
+            <a href="#" class="cta-button">Start Building My Assistant</a>
+            <p style="margin-top: 24px; font-size: 0.95rem; color: #a0aec0;">
+                You'll receive Module 1 immediately, then one module per day over the next week.
+            </p>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h3>🎯 Free Hosted Instance</h3>
+                <p>We set up OpenClaw for you. No server management required. Just start using it.</p>
             </div>
+            <div class="feature">
+                <h3>📚 Complete Training</h3>
+                <p>8 modules covering everything from installation to advanced automation workflows.</p>
+            </div>
+            <div class="feature">
+                <h3>💬 Community Access</h3>
+                <p>Join others building AI assistants. Get help when you need it.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>What You'll Learn</h2>
+            <p>This free course walks you through building your own AI assistant—from nothing to fully operational.</p>
+            
+            <h3>Module 1: The AI Assistant Revolution (30 min)</h3>
+            <p>Why 2026 is different, the hours you could reclaim, and how OpenClaw compares to every major AI tool.</p>
+            
+            <h3>Module 2-3: Real Use Cases (90 min)</h3>
+            <p>Email mastery, calendar management, content creation, client communication, and workflow automation.</p>
+            
+            <h3>Module 4-5: Installation & Training (150 min)</h3>
+            <p>Step-by-step setup, choosing your LLM, configuring skills, and creating custom workflows.</p>
+            
+            <h3>Module 6-7: Advanced & Troubleshooting (75 min)</h3>
+            <p>Multi-agent teams, browser automation, data analysis, and solving common problems.</p>
+            
+            <h3>Module 8: What's Next (30 min)</h3>
+            <p>Measuring ROI, scaling your assistant, and the business opportunity.</p>
+        </div>
+
+        <div class="ps">
+            <p><strong>P.S.</strong> — The research shows 3-5 hours per week saved on scheduling alone. That's 150-250 hours per year. 
+            This 7-hour course pays for itself in the first week if you implement even half of what you learn. The math is simple. 
+            The decision is yours.</p>
+        </div>
+
+        <div class="cta-section">
+            <h2>Ready to Start?</h2>
+            <p style="color: #4a5568; margin-bottom: 24px;">
+                The people who understand AI assistants will have a structural advantage for the next decade. 
+                The course that teaches you how is free.
+            </p>
+            <a href="#" class="cta-button">Get Immediate Access</a>
         </div>
     </div>
 </body>
