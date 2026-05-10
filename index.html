@@ -134,6 +134,65 @@
             transform: translateY(-1px);
         }
         
+        .bump-offer {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            border: 2px solid #dd6b20;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+            text-align: left;
+        }
+        
+        .bump-offer h3 {
+            color: #dd6b20;
+            margin: 0 0 16px 0;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        .bump-offer ul {
+            margin: 0 0 16px 0;
+            padding-left: 20px;
+            color: #e2e8f0;
+        }
+        
+        .bump-offer li {
+            margin: 8px 0;
+            font-size: 0.95rem;
+        }
+        
+        .bump-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px;
+            background: rgba(221, 107, 32, 0.15);
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid rgba(221, 107, 32, 0.3);
+        }
+        
+        .bump-checkbox input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: #dd6b20;
+            cursor: pointer;
+        }
+        
+        .bump-checkbox label {
+            font-weight: 600;
+            cursor: pointer;
+            color: #fff;
+        }
+        
+        .bump-checkbox .price {
+            margin-left: auto;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #dd6b20;
+        }
+        
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -220,7 +279,23 @@
             <p style="color: #718096;">
                 Learn to install and train your own AI assistant using OpenClaw
             </p>
-            <a href="#" class="cta-button">Start Building My Assistant</a>
+            
+            <div class="bump-offer">
+                <h3>⚡ Fast-Start Support Package — Add for $25</h3>
+                <ul>
+                    <li>1:1 onboarding session with Don</li>
+                    <li>Soul.md creation walkthrough</li>
+                    <li>Bot Intensive training</li>
+                    <li>Custom productivity skills for your bot</li>
+                </ul>
+                <div class="bump-checkbox">
+                    <input type="checkbox" id="bump" name="bump">
+                    <label for="bump">Yes! Add the Fast-Start Support Package</label>
+                    <span class="price">+$25</span>
+                </div>
+            </div>
+            
+            <a href="#" class="cta-button">Start Building My Assistant — Free</a>
             <p style="margin-top: 24px; font-size: 0.95rem; color: #a0aec0;">
                 You'll receive Module 1 immediately, then one module per day over the next week.
             </p>
